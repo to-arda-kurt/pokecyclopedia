@@ -19,8 +19,6 @@ interface PokemonInfo{
 }
 
 
-
-
 function App() {
   const pokemonNames = ["charizard", "ditto", "snorlax", "psyduck", "bulbasaur", "onix"]
   const [pokemonInfo, setPokemonInfo] = useState<PokemonInfo>({})
@@ -108,8 +106,8 @@ function App() {
               <span>{pokemonInfo.base_experience}</span>
             </div>
             <div className="pokemon-card-control">
-              <p className="pokemon-card-label">Types </p>
-                {pokemonTypes.map(types => <span>{types.type.name} </span>)}
+              <p className="pokemon-card-label">Types:</p>
+                {pokemonTypes.map(types => <span>{types.type.name}</span>)}
             </div>
           </div>
           :
